@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --black: #111;
+  --orange-main: rgb(231, 162, 59);
+  --orange-dark: #d09235;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/************************************/
+/* REUSABLES */
+/************************************/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+/* Text */
+
+h1 {
+  margin: 0;
+  color: #fff;
+
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+
+  padding-bottom: 3rem;
+
+  word-break: break-word;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  position: relative;
+
+  margin-bottom: 2rem;
+}
+
+.bottom-border:after {
+  content: "";
+  display: block;
+
+  padding-top: 0.5rem;
+  width: 6rem;
+  border-bottom: 0.25rem solid var(--orange-main);
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-border-left:after {
+  left: 0%;
+  transform: translateX(0);
+}
+
+.bottom-border-thin:after {
+  border-width: 0.18rem;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with "html", "button", "input", "select", and "textarea". Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Buttons */
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-color: var(--orange-main);
+
+  letter-spacing: 0.1rem;
+
+  transition: all 0.2s;
+
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #eee;
+  color: #111;
+
+  font-size: 105%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Lists */
+
+ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  position: relative;
+
+  line-height: 1rem;
+
+  margin-bottom: 2rem;
+
+  letter-spacing: 0.3rem;
+}
+
+.logo:after {
+  content: "";
+  width: 3rem;
+  border-bottom: 0.2rem solid var(--orange-main);
+
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/************************************/
+/* HEADER */
+/************************************/
+
+.nav {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  transition: all 0.4s ease-in;
+}
+
+.nav__container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__desktop {
+  display: none;
+}
+
+.nav__desktop ul {
+  display: inline-flex;
+}
+
+.nav__item {
+  display: block;
+  padding: 1.3rem 0.8rem;
+
+  transition: 0.3s all;
+
+  letter-spacing: 0.15rem;
+
+  position: relative;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  color: var(--orange-main);
+}
+
+.nav__desktop .nav__item:after {
+  content: "";
+  width: 3rem;
+  border-bottom: 0.2rem solid var(--orange-main);
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: 0.3s opacity;
+}
+
+.nav__desktop .nav__item:hover:after,
+.nav__desktop .nav__item:focus:after {
+  opacity: 1;
+}
+
+.nav__item-logo {
+  color: var(--orange-main);
+
+  transition: all 0.2s;
+}
+
+/* MOBILE NAV */
+
+.nav__mobile-side {
+  height: 100vh;
+  width: 0;
+  max-width: 100%;
+
+  padding: 5rem 1rem 0 1rem;
+
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: -5rem;
+
+  overflow-x: hidden;
+
+  background-color: #0b0b0b;
+
+  transition: all 0.7s;
+}
+
+.nav__item-home {
+  color: var(--orange-main);
+}
+
+#nav__mobile-close {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  transform: translate(-50%, -50%);
+
+  font-size: 3rem;
+  color: #fff;
+}
+
+#nav__mobile-close:hover,
+#nav__mobile-close:focus {
+  color: var(--orange-main);
+}
+
+/* STICKY NAV */
+
+.nav__sticky {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/************************************/
+/* FOOTER */
+/************************************/
+
+.footer__main {
+  background-color: #111;
+  color: #fff;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__main-item {
+  width: 100%;
+
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+
+.footer__main-item h3 {
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+
+  margin-bottom: 1rem;
+}
+
+.footer__main-list {
+  border: 0.15rem solid var(--orange-dark);
+  padding: 1rem 1rem;
+
+  text-align: left;
+
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+.footer__main-list li {
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
+
+  border-bottom: 0.08rem solid #2a2a2a;
+}
+
+.footer__main-list li:last-child {
+  border-bottom: none;
+}
+
+.footer__main-list span {
+  float: right;
+  color: var(--orange-dark);
+}
+
+/************************************/
+/* MEDIA QUERIES */
+/************************************/
+
+/* NON-MOBILE */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .nav__container {
+    justify-content: space-around;
+  }
+
+  .nav__desktop {
+    display: inline-block;
+  }
+
+  .nav__mobile,
+  .nav__logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 220%;
+  }
+}

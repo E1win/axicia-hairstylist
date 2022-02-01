@@ -1,0 +1,308 @@
+/************************************/
+/* HERO */
+/************************************/
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/hero1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 80vh;
+
+  position: relative;
+}
+
+.hero__content {
+  margin-top: 5rem;
+}
+
+.hero__content-name {
+  font-size: 110%;
+  font-weight: 700;
+  color: var(--orange-main);
+}
+
+/************************************/
+/* INFORMATION */
+/************************************/
+
+.information {
+  padding-bottom: 5rem;
+}
+
+.information__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: center;
+
+  margin: 1rem 0;
+}
+
+.information__box-icon {
+  font-size: 3rem;
+  color: var(--orange-main);
+  padding: 0.5rem;
+
+  padding-right: 1rem;
+}
+
+.information__box-text {
+  text-align: center;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.information__box-title {
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+}
+
+.information__box-subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.information__box-days {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.information__box-times {
+  text-align: left;
+}
+
+/************************************/
+/* HAIRSTYLES */
+/************************************/
+
+.hairstyles {
+  background-color: #f3f3f3;
+}
+
+.hairstyles__style {
+  padding: 0;
+}
+
+.hairstyles__style p {
+  text-transform: uppercase;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.hairstyles__button {
+  margin-top: 3rem;
+}
+
+/************************************/
+/* ABOUT US */
+/************************************/
+
+.about-us {
+  background-color: #131313;
+  padding: 0;
+}
+
+.about-us__picture {
+  background-image: url(../img/rainbow-hair.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+
+  height: 25rem;
+  min-height: 100%;
+}
+
+.about-us__container {
+  color: #fff;
+  padding: 6rem 15%;
+
+  text-align: left;
+}
+
+.about-us__container h2 {
+  text-transform: none;
+  font-weight: 300;
+}
+
+.about-us__container p {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+/************************************/
+/* PRICING */
+/************************************/
+
+.pricing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pricing__wrapper {
+  padding: 0 1.5rem;
+}
+
+.pricing__container {
+  max-width: 40rem;
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  border: 0.1rem #13131325 dashed;
+  border-radius: 0.4rem;
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.8rem 0.8rem;
+  margin-bottom: 0.8rem;
+
+  border-radius: 0.3rem;
+
+  box-shadow: 0.05rem 0.05rem 0.7rem rgb(180, 180, 180);
+
+  font-size: 0.92rem;
+
+  letter-spacing: 0.05rem;
+}
+
+.pricing__item p {
+  width: 100%;
+}
+
+.pricing__item-description {
+  text-align: left;
+  margin-bottom: 0.4rem;
+}
+
+.pricing__item-price {
+  text-align: left;
+  color: var(--orange-dark);
+}
+
+.prices__btn {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background-color: #131313;
+
+  text-transform: none;
+
+  padding: 0.7rem 1.4rem;
+
+  border-radius: 0.2rem;
+}
+
+.prices__btn:hover,
+.prices__btn:focus {
+  background-color: #050505;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.prices__btn:focus {
+  border: 0.3rem solid #fff;
+}
+
+/************************************/
+/* CALL TO ACTION */
+/************************************/
+
+.call-to-action {
+  background-color: var(--orange-main);
+  min-height: 2rem;
+
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.call-to-action__btn {
+  border: 0.1rem solid #fff;
+  padding: 0.5rem 1.3rem;
+
+  font-size: 0.8rem;
+}
+
+.call-to-action__btn:hover,
+.call-to-action__btn:focus {
+  font-size: 0.8rem;
+}
+
+/************************************/
+/* MEDIA QUERIES */
+/************************************/
+
+/* NON-MOBILE */
+@media only screen and (min-width: 768px) {
+  .hero__content {
+    padding: 0 10%;
+  }
+
+  .hairstyles__style {
+    padding: 0.1rem;
+  }
+
+  /* About us */
+
+  .about-us__container {
+    padding-top: 25%;
+    padding-left: 15%;
+    padding-right: 20%;
+  }
+
+  .about-us__picture {
+    height: 35rem;
+  }
+
+  /* Pricing List */
+
+  .pricing__wrapper {
+    padding: 0 6rem;
+  }
+
+  .pricing__item {
+    flex-direction: row;
+  }
+
+  .pricing__item-description {
+    margin-bottom: 0;
+  }
+
+  .pricing__item-price {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero__content {
+    padding: 0 15%;
+  }
+
+  .hairstyles__style {
+    padding: 0.5rem;
+  }
+
+  .about-us__container {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 25%;
+  }
+
+  .pricing__wrapper {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  .hairstyles__style img {
+    margin: 0 auto;
+  }
+}

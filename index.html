@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
+    />
+
+    <!-- Purecss Grid System -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/base-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preload" as="image" href="public/img/hero1.jpg" />
+
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/home.css" />
+    <title>Axicia - Hairstylist in Leeuwarden</title>
+  </head>
+
+  <body>
+    <div>
+      <header class="nav">
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="index.html" class="nav__item">Axicia</a>
+          </div>
+          <nav class="nav__desktop">
+            <ul class="nav__desktop-left">
+              <li>
+                <a href="#" class="nav__item">Boek nu</a>
+              </li>
+              <li>
+                <a href="#pricing" class="nav__item">Tarieven</a>
+              </li>
+            </ul>
+            <ul class="nav__desktop-center">
+              <li>
+                <a href="#hero" class="nav__item nav__item-logo">Axicia</a>
+              </li>
+            </ul>
+            <ul class="nav__desktop-right">
+              <li>
+                <a href="#about-us" class="nav__item">Over Ons</a>
+              </li>
+              <li>
+                <a href="#" class="nav__item">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav__mobile">
+            <button type="button" class="nav__item" id="nav__mobile-open">
+              <i class="fas fa-bars"></i> MENU
+            </button>
+            <nav class="nav__mobile-side">
+              <button type="button" class="nav__item" id="nav__mobile-close">
+                &times;
+              </button>
+              <ul class="nav__mobile-content">
+                <li>
+                  <a href="#hero" class="nav__item nav__item-home">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="nav__item">Boek nu</a>
+                </li>
+                <li>
+                  <a href="#pricing" class="nav__item">Tarieven</a>
+                </li>
+                <li>
+                  <a href="#about-us" class="nav__item">Over Ons</a>
+                </li>
+                <li>
+                  <a href="#" class="nav__item">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div>
+      <section class="hero container" id="hero">
+        <div class="hero__content">
+          <h1>
+            Welkom bij
+            <span class="hero__content-name">Axicia</span> Hairstyling
+          </h1>
+          <a href="#" class="btn">Maak nu een afspraak</a>
+        </div>
+      </section>
+      <section class="information container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="information__box">
+              <div class="information__box-icon">
+                <i class="far fa-clock"></i>
+              </div>
+              <div class="information__box-text">
+                <div class="information__box-title">
+                  <p>OPENINGSTIJDEN</p>
+                </div>
+                <div class="information__box-subtitle">
+                  <div class="information__box-days">
+                    <p>
+                      Zo/Ma: <br />
+                      Wo/Vr: <br />
+                      Di/Do: <br />
+                      Za: <br />
+                    </p>
+                  </div>
+                  <div class="information__box-times">
+                    <p>
+                      Gesloten<br />
+                      09:30 tot 18:00 <br />
+                      10:00 tot 20:00<br />
+                      09:00 tot 17:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="information__box">
+              <div class="information__box-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="information__box-text">
+                <div class="information__box-title">
+                  <p>LOCATIE</p>
+                </div>
+                <div class="information__box-subtitle">
+                  <p>
+                    Julianalaan 97<br />
+                    Leeuwarden
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="information__box">
+              <div class="information__box-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="information__box-text">
+                <div class="information__box-title">
+                  <p>TELEFOONNUMMER</p>
+                </div>
+                <div class="information__box-subtitle">
+                  <p>06 23 45 67 89</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hairstyles container">
+        <h2 class="bottom-border">Hairstyles</h2>
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="hairstyles__style">
+              <img
+                src="/public/img/short-hair2.jpg"
+                alt="Man with short hair."
+                class="pure-img"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Kort Haar</p>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="hairstyles__style">
+              <img
+                src="/public/img/colored-hair2.jpg"
+                alt="Woman with straight hair."
+                class="pure-img"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Stijl Haar</p>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="hairstyles__style">
+              <img
+                src="/public/img/curly-hair2.jpg"
+                alt="Woman with curly hair."
+                class="pure-img"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Krullend Haar</p>
+            </div>
+          </div>
+        </div>
+        <div class="hairstyles__button">
+          <a href="#" class="btn">Reserveer direct een afspraak</a>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="about-us__picture"></div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="about-us__container" id="about-us">
+              <h2 class="bottom-border bottom-border-left bottom-border-thin">
+                Axicia Hairstyling
+              </h2>
+              <p>
+                In onze moderne salon kunt u terecht voor de laatste trends op
+                het gebied van haarmode.<br /><br />Kleuren, knippen, stylen;
+                wat je ook maar wilt doen met je haar, elk bezoek aan Axicia
+                begint met een deskundig persoonlijk advies. Pas wanneer we
+                samen weten wat je voor ogen hebt, beginnen we.<br /><br />Zien
+                we je snel in onze salon in Leeuwarden?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing container" id="pricing">
+        <div class="pricing__wrapper">
+          <div class="pricing__container">
+            <div class="pricing__logo">
+              <p class="logo">Axicia</p>
+            </div>
+            <div class="pricing__item">
+              <p class="pricing__item-description">Wassen & Knippen</p>
+              <p class="pricing__item-price">€30,-</p>
+            </div>
+            <div class="pricing__item">
+              <p class="pricing__item-description">Wassen, knippen, drogen</p>
+              <p class="pricing__item-price">€34,50</p>
+            </div>
+            <div class="pricing__item">
+              <p class="pricing__item-description">
+                Kinderen knippen 13 tot 16 jaar
+              </p>
+              <p class="pricing__item-price">v.a. €20,-</p>
+            </div>
+            <div class="pricing__item">
+              <p class="pricing__item-description">Permanent Haircolor</p>
+              <p class="pricing__item-price">v.a. €42,50</p>
+            </div>
+            <a href="#" class="btn prices__btn">Alle prijzen bekijken</a>
+          </div>
+        </div>
+      </section>
+      <section class="call-to-action container">
+        <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
+      </section>
+    </div>
+    <div>
+      <footer>
+        <div class="footer__main container">
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="footer__main-item footer__main-openingtimes">
+                <h3>Openingstijden</h3>
+                <div class="footer__main-content">
+                  <ul class="footer__main-list">
+                    <li>Zo / Ma<span>Gesloten</span></li>
+                    <li>Wo / Vr<span>09:30 tot 18:00</span></li>
+                    <li>Di / Do<span>10:00 tot 20:00</span></li>
+                    <li>Za<span>09:00 tot 17:00</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="footer__main-item footer__main-contact">
+                <h3>Contact</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__sub"></div>
+      </footer>
+    </div>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
