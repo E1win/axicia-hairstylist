@@ -51,66 +51,62 @@
   </head>
 
   <body>
-    <div>
-      <header class="nav">
-        <div class="nav__container">
-          <div class="nav__logo">
-            <a href="index.html" class="nav__item">Axicia</a>
-          </div>
-          <nav class="nav__desktop">
-            <ul class="nav__desktop-left">
+    <header class="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="index.html" class="nav__item">Axicia</a>
+        </div>
+        <nav class="nav__desktop">
+          <ul class="nav__desktop-left">
+            <li>
+              <a href="#" class="nav__item">Home</a>
+            </li>
+            <li>
+              <a href="public/pricing.html" class="nav__item">Tarieven</a>
+            </li>
+          </ul>
+          <ul class="nav__desktop-center">
+            <li>
+              <a href="#hero" class="nav__item nav__item-logo">Axicia</a>
+            </li>
+          </ul>
+          <ul class="nav__desktop-right">
+            <li>
+              <a href="#about-us" class="nav__item">Over Ons</a>
+            </li>
+            <li>
+              <a href="public/contact.html" class="nav__item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__mobile">
+          <button type="button" class="nav__item" id="nav__mobile-open">
+            <i class="fas fa-bars"></i> MENU
+          </button>
+          <nav class="nav__mobile-side">
+            <button type="button" class="nav__item" id="nav__mobile-close">
+              &times;
+            </button>
+            <ul class="nav__mobile-content">
               <li>
-                <a href="#" class="nav__item">Boek nu</a>
+                <a href="#hero" class="nav__item nav__item-home">Home</a>
               </li>
               <li>
-                <a href="#pricing" class="nav__item">Tarieven</a>
+                <a href="public/pricing.html" class="nav__item">Tarieven</a>
               </li>
-            </ul>
-            <ul class="nav__desktop-center">
-              <li>
-                <a href="#hero" class="nav__item nav__item-logo">Axicia</a>
-              </li>
-            </ul>
-            <ul class="nav__desktop-right">
               <li>
                 <a href="#about-us" class="nav__item">Over Ons</a>
               </li>
               <li>
-                <a href="#" class="nav__item">Contact</a>
+                <a href="public/contact.html" class="nav__item">Contact</a>
               </li>
             </ul>
           </nav>
-          <div class="nav__mobile">
-            <button type="button" class="nav__item" id="nav__mobile-open">
-              <i class="fas fa-bars"></i> MENU
-            </button>
-            <nav class="nav__mobile-side">
-              <button type="button" class="nav__item" id="nav__mobile-close">
-                &times;
-              </button>
-              <ul class="nav__mobile-content">
-                <li>
-                  <a href="#hero" class="nav__item nav__item-home">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="nav__item">Boek nu</a>
-                </li>
-                <li>
-                  <a href="#pricing" class="nav__item">Tarieven</a>
-                </li>
-                <li>
-                  <a href="#about-us" class="nav__item">Over Ons</a>
-                </li>
-                <li>
-                  <a href="#" class="nav__item">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
-      </header>
-    </div>
-    <div>
+      </div>
+    </header>
+
+    <main>
       <section class="hero container" id="hero">
         <div class="hero__content">
           <h1>
@@ -290,63 +286,62 @@
       <section class="call-to-action container">
         <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
       </section>
-    </div>
-    <div>
-      <footer>
-        <div class="footer__main container">
-          <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-2">
-              <div class="footer__main-item footer__main-contact">
-                <h3>Contact</h3>
-                <div class="footer__main-content">
-                  <ul class="footer__main-list">
-                    <li>Julianalaan 97, Leeuwarden</li>
-                    <li>Phone<span>06 23 45 67 89</span></li>
-                    <li>Email<span>info@axicia.nl</span></li>
-                    <li>Web<span>https://axicia.nl</span></li>
-                  </ul>
-                </div>
+    </main>
+
+    <footer>
+      <div class="footer__main container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-item footer__main-contact">
+              <h3>Contact</h3>
+              <div class="footer__main-content">
+                <ul class="footer__main-list">
+                  <li>Julianalaan 97, Leeuwarden</li>
+                  <li>Phone<span>06 23 45 67 89</span></li>
+                  <li>Email<span>info@axicia.nl</span></li>
+                  <li>Web<span>https://axicia.nl</span></li>
+                </ul>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2">
-              <div class="footer__main-item footer__main-openingtimes">
-                <h3>Openingstijden</h3>
-                <div class="footer__main-content">
-                  <ul class="footer__main-list">
-                    <li>Zo / Ma<span>Gesloten</span></li>
-                    <li>Wo / Vr<span>09:30 tot 18:00</span></li>
-                    <li>Di / Do<span>10:00 tot 20:00</span></li>
-                    <li>Za<span>09:00 tot 17:00</span></li>
-                  </ul>
-                </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-item footer__main-openingtimes">
+              <h3>Openingstijden</h3>
+              <div class="footer__main-content">
+                <ul class="footer__main-list">
+                  <li>Zo / Ma<span>Gesloten</span></li>
+                  <li>Wo / Vr<span>09:30 tot 18:00</span></li>
+                  <li>Di / Do<span>10:00 tot 20:00</span></li>
+                  <li>Za<span>09:00 tot 17:00</span></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__sub container">
-          <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-2">
-              <div class="footer__sub-text">
-                <p>
-                  Axicia Hairstyling | Website door
-                  <a href="#" class="footer__sub-creator">Elwin Jukema</a>
-                </p>
-              </div>
+      </div>
+      <div class="footer__sub container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__sub-text">
+              <p>
+                Axicia Hairstyling | Website door
+                <a href="#" class="footer__sub-creator">Elwin Jukema</a>
+              </p>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2">
-              <div class="footer__sub-socialmedias">
-                <a href="#" class="footer__sub-socialmedia">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#" class="footer__sub-socialmedia">
-                  <i class="fab fa-instagram-square"></i>
-                </a>
-              </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__sub-socialmedias">
+              <a href="#" class="footer__sub-socialmedia">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#" class="footer__sub-socialmedia">
+                <i class="fab fa-instagram-square"></i>
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <script src="public/js/script.js"></script>
   </body>
 </html>
