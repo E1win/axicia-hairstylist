@@ -308,9 +308,14 @@ ul {
 /* FOOTER */
 /************************************/
 
+footer {
+  color: #fff;
+}
+
+/* Main Footer */
+
 .footer__main {
   background-color: #111;
-  color: #fff;
 
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -354,6 +359,43 @@ ul {
 .footer__main-list span {
   float: right;
   color: var(--orange-dark);
+}
+
+/* Sub Footer */
+
+.footer__sub {
+  background-color: #0b0b0b;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer__sub > * {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.footer__sub-text {
+  margin-bottom: 0.8rem;
+}
+
+.footer__sub-creator {
+  border-bottom: 0.1rem solid #fff;
+}
+
+.footer__sub-creator:hover {
+  color: var(--orange-main);
+  border-color: var(--orange-main);
+}
+
+.footer__sub-socialmedias {
+  text-align: right;
+
+  font-size: 1.7rem;
+}
+
+.footer__sub-socialmedia:hover {
+  color: var(--orange-main);
 }
 
 /************************************/

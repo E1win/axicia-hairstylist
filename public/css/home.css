@@ -4,7 +4,7 @@
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/hero1.jpg);
+    url(../img/hero1.webp);
   background-size: cover;
   background-position: center;
 
@@ -108,7 +108,7 @@
 }
 
 .about-us__picture {
-  background-image: url(../img/rainbow-hair.jpg);
+  background-image: url(../img/rainbow-hair.webp);
   background-size: cover;
   background-position: 50% 30%;
 
@@ -187,6 +187,7 @@
 .pricing__item-price {
   text-align: left;
   color: var(--orange-dark);
+  font-weight: 700;
 }
 
 .prices__btn {
@@ -244,6 +245,7 @@
 @media only screen and (min-width: 768px) {
   .hero__content {
     padding: 0 10%;
+    margin-top: 12rem;
   }
 
   .hairstyles__style {
