@@ -14,7 +14,12 @@
 }
 
 .hero__content {
-  margin-top: 5rem;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero__content-name {
@@ -145,18 +150,8 @@
   padding-bottom: 3rem;
 }
 
-.pricing__wrapper {
-  padding: 0 1.5rem;
-}
-
 .pricing__container {
-  max-width: 40rem;
-  margin: 0 auto;
-
-  padding: 2rem;
-
   border: 0.1rem #13131325 dashed;
-  border-radius: 0.4rem;
 }
 
 .pricing__item {
@@ -216,30 +211,6 @@
 }
 
 /************************************/
-/* CALL TO ACTION */
-/************************************/
-
-.call-to-action {
-  background-color: var(--orange-main);
-  min-height: 2rem;
-
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.call-to-action__btn {
-  border: 0.1rem solid #fff;
-  padding: 0.5rem 1.3rem;
-
-  font-size: 0.8rem;
-}
-
-.call-to-action__btn:hover,
-.call-to-action__btn:focus {
-  font-size: 0.8rem;
-}
-
-/************************************/
 /* MEDIA QUERIES */
 /************************************/
 
@@ -247,7 +218,6 @@
 @media only screen and (min-width: 768px) {
   .hero__content {
     padding: 0 10%;
-    margin-top: 12rem;
   }
 
   .hairstyles__style {
@@ -267,10 +237,6 @@
   }
 
   /* Pricing List */
-
-  .pricing__wrapper {
-    padding: 0 6rem;
-  }
 
   .pricing__item {
     flex-direction: row;
@@ -298,10 +264,6 @@
     padding-top: 20%;
     padding-bottom: 20%;
     padding-right: 25%;
-  }
-
-  .pricing__wrapper {
-    padding: 0 10rem;
   }
 }
 
