@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
-    <title>Tarieven - Axicia</title>
+    <title>Contact - Axicia</title>
   </head>
 
   <body>
@@ -98,15 +98,65 @@
         </div>
       </div>
     </header>
+
+    <!-- 
+      <label for="name">
+                  <i class="fa fa-envelope form__icon"></i>
+                </label>
+<label for="name">
+                  <i class="fa fa-user form__icon"></i>
+                </label>
+     -->
+
     <main>
       <section class="hero container">
         <div class="hero__content">
-          <div class="card__wrapper">
-            <div class="card contact-card">
-              <div class="contact-card__title">
-                <p class="logo">Contact</p>
+          <h1>Contact</h1>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="card__wrapper">
+          <div class="card contact-card">
+            <h3 class="contact-card__title">Contact Formulier</h3>
+            <form action="../modules/send-mail.php" method="post" class="form">
+              <div class="form__container">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Naam"
+                  class="card__item"
+                  aria-label="Vul hier uw naam in."
+                  required
+                />
               </div>
-            </div>
+              <div class="form__container">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mailadres"
+                  aria-label="Vul hier uw e-mailadres in."
+                  class="card__item"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Zet hier jouw bericht"
+                aria-label="Vul hier uw bericht in."
+                class="card__item"
+                required
+                minlength="10"
+                maxlength="500"
+              ></textarea>
+              <input
+                type="submit"
+                value="Verstuur uw bericht"
+                class="form__button btn"
+              />
+            </form>
           </div>
         </div>
       </section>
@@ -114,6 +164,7 @@
         <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
       </section>
     </main>
+
     <footer>
       <div class="footer__main container">
         <div class="pure-g">

@@ -1,10 +1,15 @@
+/************************************/
+/* HERO */
+/************************************/
+
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/hero-contact.webp);
   background-size: cover;
   background-position: top;
 
-  min-height: 100vh;
+  height: 20vh;
+  min-height: 20rem;
 
   position: relative;
 }
@@ -20,8 +25,95 @@
 
 .hero__content h1 {
   font-weight: 500;
+  letter-spacing: 0.6rem;
+  padding-bottom: 0.2rem;
 }
 
+.hero__content h3 {
+  color: var(--orange-dark);
+  font-weight: 500;
+}
+
+/************************************/
+/* CONTACT */
+/************************************/
+
 .contact-card {
-  background-color: #eee;
+  border: 0.15rem #13131325 dashed;
+}
+
+.contact-card__title {
+  font-size: 1.68rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-bottom: 0.3em;
+
+  letter-spacing: 0.11rem;
+
+  position: relative;
+}
+
+.contact-card__title:after {
+  content: "";
+
+  width: 6rem;
+  border-bottom: 0.17rem solid var(--orange-main);
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/************************************/
+/* CONTACT FORMULIER */
+/************************************/
+
+.form textarea {
+  width: 100%;
+}
+
+.form__container input {
+  flex: 1;
+  margin-bottom: 0.7em;
+}
+
+.form__container input,
+.form textarea {
+  padding: 0.5em;
+
+  outline: none;
+  border: none;
+
+  width: 100%;
+}
+
+.form__button {
+  outline: none;
+  border: none;
+
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background-color: #131313;
+
+  text-transform: none;
+
+  padding: 0.7rem 1.4rem;
+
+  border-radius: 0.2rem;
+}
+
+.form__button:hover,
+.form__buton:focus {
+  background-color: #050505;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/************************************/
+/* MEDIA QUERIES */
+/************************************/
+
+@media only screen and (min-width: 768px) {
 }

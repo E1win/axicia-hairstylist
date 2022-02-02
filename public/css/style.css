@@ -131,7 +131,7 @@ button {
 
 .btn {
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   background-color: var(--orange-main);
 
   letter-spacing: 0.1rem;
@@ -443,6 +443,16 @@ footer {
 
   padding: 2rem;
   border-radius: 0.4rem;
+}
+
+.card__item {
+  margin-bottom: 0.8rem;
+
+  box-shadow: 0.05rem 0.05rem 0.7rem rgb(180, 180, 180);
+
+  font-size: 0.92rem;
+
+  letter-spacing: 0.05rem;
 }
 
 /* End of page call-to-action */
