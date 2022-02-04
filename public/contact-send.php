@@ -1,8 +1,9 @@
 <?php
 
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+if (!isset($_POST['name']) && !isset($_POST['email']) && !isset($_POST['message'])) {
     // If the variables aren't set,
     // Redirect to contact.html
+
     header("Location: ./contact.html");
 }
 
@@ -18,9 +19,9 @@ $errors = [];
 if (empty($name)) {
     // Check if name string is empty.
     $errors[] = 'Naam is niet ingevuld.';
-} else if (!preg_match("/^[a-zA-Z-']/*$/", $name) || strlen($name) > 50) {
+} else if (strlen($name) > 50) {
     // Check if name only has letters, dashes apostrophes and whitespaces.
-    $errors[] = "Naam mag alleen letters en spaties hebben en niet meer dan 50 karakters hebben.";
+    $errors[] = "Naam mag niet meer dan 50 karakters hebben.";
 }
 
 if (empty($name)) {
@@ -49,10 +50,10 @@ if (empty($errors)) {
     $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
     $body = join(PHP_EOL, $bodyParagraphs);
 
-    if (mail($toEmail, $emailSubject, $body, $headers)) {
-
-    } else {
-        $errors[] = "Er iets mis gegaan, probeer later opnieuw.";
+    try {
+      mail($toEmail, $emailSubject, $body, $headers);
+    } catch(error) {
+      $errors[] = "Er iets mis gegaan, probeer later opnieuw.";
     }
 }
 
@@ -65,9 +66,6 @@ if (!empty($errors)) {
 } else {
   $card_title = "Uw bericht is succesvol verstuurd.";
 }
-
-
-if ()
 
 ?>
 
@@ -113,8 +111,8 @@ if ()
   </head>
 
   <body>
-    <header class="nav">
-      <div class="nav__container">
+    <header>
+      <div class="navbar">
         <div class="nav__logo">
           <a href="../index.html" class="nav__item">Axicia</a>
         </div>
@@ -139,7 +137,7 @@ if ()
               <a href="../index.html#about-us" class="nav__item">Over Ons</a>
             </li>
             <li>
-              <a href="#" class="nav__item">Contact</a>
+              <a href="contact.html" class="nav__item">Contact</a>
             </li>
           </ul>
         </nav>
@@ -164,34 +162,34 @@ if ()
                 <a href="../index.html#about-us" class="nav__item">Over Ons</a>
               </li>
               <li>
-                <a href="#" class="nav__item">Contact</a>
+                <a href="contact.html" class="nav__item">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-    </header>
-
-    <main>
       <section class="hero container">
         <div class="hero__content">
           <h1>Contact</h1>
         </div>
       </section>
+    </header>
+
+    <main>
       <section class="contact">
         <div class="card__wrapper">
           <div class="card contact-card">
-            <h3 class="contact-card__title">Bericht Verstuurd</h3>
-              
+            <h3 class="contact-card__title"><?php echo $card_title; ?></h3>
+              <?php echo $errorMessage; ?>
           </div>
         </div>
-      </section>
-      <section class="call-to-action container">
-        <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
       </section>
     </main>
 
     <footer>
+    <section class="call-to-action container">
+        <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
+      </section>
       <div class="footer__main container">
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-2">
