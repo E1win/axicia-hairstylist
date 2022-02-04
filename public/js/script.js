@@ -5,7 +5,7 @@
 /**************************/
 
 // Navigation
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".navbar");
 const navMob = document.querySelector(".nav__mobile-side");
 const navMobOpen = document.getElementById("nav__mobile-open");
 const navMobClose = document.getElementById("nav__mobile-close");

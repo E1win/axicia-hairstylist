@@ -196,7 +196,7 @@ ul {
 /* HEADER */
 /************************************/
 
-.nav {
+.navbar {
   background-color: transparent;
   color: #fff;
   font-size: 1rem;
@@ -210,10 +210,7 @@ ul {
   z-index: 100;
 
   transition: all 0.4s ease-in;
-}
 
-.nav__container {
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -490,7 +487,7 @@ footer {
 
   /* Navigation */
 
-  .nav__container {
+  .navbar {
     justify-content: space-around;
   }
 
