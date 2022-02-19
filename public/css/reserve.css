@@ -1,0 +1,79 @@
+.reserve__information {
+  position: relative;
+}
+
+.information__box {
+  height: 100%;
+  padding: 1rem 0.5rem;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+.information__box-title {
+  color: var(--orange-dark);
+  padding-bottom: 0.7rem;
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+
+.information__box-title:after {
+  content: "";
+  width: 7rem;
+  border-bottom: 0.15rem solid var(--orange-dark);
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.information__box-times {
+  padding-left: 0.5rem;
+}
+
+.information__box-times,
+.information__box-days {
+  line-height: 1.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .reserve__information:after {
+    content: "";
+
+    width: 0.1rem;
+    height: 100%;
+    background-color: #ddd;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .information__box {
+    max-width: 20rem;
+  }
+
+  /* .information__box:after {
+    content: "";
+
+    width: 50%;
+    height: 0.1rem;
+    background-color: #ddd;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  .information__box-address {
+    margin-left: auto;
+  }
+
+  .information__box-phone {
+    margin-right: auto;
+  }
+}

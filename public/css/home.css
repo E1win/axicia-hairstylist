@@ -5,85 +5,26 @@
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/hero1.webp);
-  background-size: cover;
   background-position: center;
 
   height: 80vh;
   min-height: 35rem;
-
-  position: relative;
 }
 
 .hero__content {
-  width: 100%;
-
-  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hero__content h1 {
   max-width: 30ch;
   margin: 0 auto;
+  font-weight: 300;
 }
 
 .hero__content-name {
   font-size: 110%;
   font-weight: 700;
   color: var(--orange-main);
-}
-
-/************************************/
-/* INFORMATION */
-/************************************/
-
-.information {
-  padding-bottom: 5rem;
-}
-
-.information__box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex;
-  justify-content: center;
-
-  margin: 1rem 0;
-}
-
-.information__box-icon {
-  font-size: 3rem;
-  color: var(--orange-main);
-  padding: 0.5rem;
-
-  padding-right: 1rem;
-}
-
-.information__box-text {
-  text-align: center;
-  line-height: 1.4rem;
-  letter-spacing: 0.1rem;
-}
-
-.information__box-title {
-  font-weight: 700;
-  padding-bottom: 0.3rem;
-}
-
-.information__box-subtitle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.information__box-days {
-  text-align: right;
-  padding-right: 0.5rem;
-}
-
-.information__box-times {
-  text-align: left;
 }
 
 /************************************/
@@ -161,28 +102,7 @@
 }
 
 .pricing__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0.8rem 0.8rem;
   border-radius: 0.3rem;
-}
-
-.pricing__item p {
-  width: 100%;
-}
-
-.pricing__item-description {
-  text-align: left;
-  margin-bottom: 0.4rem;
-}
-
-.pricing__item-price {
-  text-align: left;
-  color: var(--orange-dark);
-  font-weight: 700;
 }
 
 .prices__btn {
@@ -232,20 +152,6 @@
 
   .about-us__picture {
     height: 35rem;
-  }
-
-  /* Pricing List */
-
-  .pricing__item {
-    flex-direction: row;
-  }
-
-  .pricing__item-description {
-    margin-bottom: 0;
-  }
-
-  .pricing__item-price {
-    text-align: right;
   }
 }
 

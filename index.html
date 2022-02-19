@@ -56,10 +56,10 @@
         <div class="nav__logo">
           <a href="index.html" class="nav__item">Axicia</a>
         </div>
-        <nav class="nav__desktop">
+        <nav class="nav__desktop" aria-label="Desktop navigation.">
           <ul class="nav__desktop-left">
             <li>
-              <a href="#" class="nav__item">Home</a>
+              <a href="#hero" class="nav__item">Home</a>
             </li>
             <li>
               <a href="public/pricing.html" class="nav__item">Tarieven</a>
@@ -72,7 +72,7 @@
           </ul>
           <ul class="nav__desktop-right">
             <li>
-              <a href="#about-us" class="nav__item">Over Ons</a>
+              <a href="public/reserve.html" class="nav__item">Reserveren</a>
             </li>
             <li>
               <a href="public/contact.html" class="nav__item">Contact</a>
@@ -80,10 +80,20 @@
           </ul>
         </nav>
         <div class="nav__mobile">
-          <button type="button" class="nav__item" id="nav__mobile-open">
+          <button
+            type="button"
+            class="nav__item"
+            id="nav__mobile-open"
+            aria-controls="nav__mobile-side"
+          >
             <i class="fas fa-bars"></i> MENU
           </button>
-          <nav class="nav__mobile-side">
+          <div id="nav__mobile-overlay"></div>
+          <nav
+            class="nav__mobile-side"
+            id="nav__mobile-side"
+            aria-label="Mobile navigation."
+          >
             <button type="button" class="nav__item" id="nav__mobile-close">
               &times;
             </button>
@@ -95,7 +105,7 @@
                 <a href="public/pricing.html" class="nav__item">Tarieven</a>
               </li>
               <li>
-                <a href="#about-us" class="nav__item">Over Ons</a>
+                <a href="public/reserve.html" class="nav__item">Reserveren</a>
               </li>
               <li>
                 <a href="public/contact.html" class="nav__item">Contact</a>
@@ -114,7 +124,7 @@
             Welkom bij
             <span class="hero__content-name">Axicia</span> Hairstyling
           </h1>
-          <a href="#" class="btn">Maak nu een afspraak</a>
+          <a href="public/reserve.html" class="btn">Maak nu een afspraak</a>
         </div>
       </section>
     </header>
@@ -228,7 +238,9 @@
           </div>
         </div>
         <div class="hairstyles__button">
-          <a href="#" class="btn">Reserveer direct een afspraak</a>
+          <a href="public/reserve.html" class="btn"
+            >Reserveer direct een afspraak</a
+          >
         </div>
       </section>
       <section class="about-us">
@@ -291,7 +303,9 @@
 
     <footer>
       <section class="call-to-action container">
-        <a href="#" class="btn call-to-action__btn">Maak nu een afspraak</a>
+        <a href="public/reserve.html" class="btn call-to-action__btn"
+          >Maak nu een afspraak</a
+        >
       </section>
       <div class="footer__main container">
         <div class="pure-g">

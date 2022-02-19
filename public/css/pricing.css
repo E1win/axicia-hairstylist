@@ -1,0 +1,139 @@
+/************************************/
+/* PRICING */
+/************************************/
+
+.pricing__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pricing__container {
+  width: 100%;
+  min-height: 4rem;
+
+  box-shadow: 0.05rem 0.05rem 0.7rem rgb(180, 180, 180);
+
+  padding: 0.6rem;
+}
+
+.pricing__content {
+  position: relative;
+
+  max-height: 15rem;
+  overflow-y: hidden;
+}
+
+.pricing__content-btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -99%);
+
+  width: 100%;
+  padding-top: 2rem;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1)
+  );
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  color: var(--orange-dark);
+
+  transition: color 0.2s;
+}
+
+.pricing__content-btn:hover,
+.pricing__content-btn:focus {
+  color: var(--orange-main);
+}
+
+.icon-down {
+  padding: 0 0.5rem;
+
+  transition: transform 0.2s;
+}
+
+.pricing__content-open {
+  max-height: 99rem;
+}
+
+.pricing__content-open > .pricing__item:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.pricing__content-open .icon-down {
+  transform: rotate(180deg);
+}
+
+/* Pricing Items */
+
+.pricing__title {
+  border-bottom: 0.15rem solid var(--orange-dark);
+  max-width: 20rem;
+  margin: auto;
+
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0;
+}
+
+.pricing__title p {
+  padding-top: 0.2rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--orange-dark);
+  letter-spacing: 0.15rem;
+}
+
+.pricing__item {
+  position: relative;
+}
+
+.pricing__item p {
+  letter-spacing: 0.08rem;
+}
+
+.pricing__item:after {
+  content: "";
+  position: absolute;
+
+  width: 90%;
+  min-width: 7rem;
+
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 0.08rem solid rgba(0, 0, 0, 0.22);
+}
+
+.pricing__item-description,
+.pricing__item-price {
+  text-align: center;
+}
+
+.pricing__item-price {
+  width: 100%;
+}
+
+/* NON-MOBILE */
+@media only screen and (min-width: 768px) {
+  .pricing__wrapper {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .pricing__item-description,
+  .pricing__item-price {
+    text-align: left;
+  }
+
+  .pricing__item-price {
+    width: auto;
+    padding-left: 0.5rem;
+  }
+}

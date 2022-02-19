@@ -38,12 +38,12 @@
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Neem hier contact op met Axicia Hairstyling, de modernste hairstylist in Leeuwarden."
+      content="Bel ons tijdens onze openingstijden om snel en gemakkelijk een reservatie te maken. Tel. 06 23 45 67 89"
     />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <title>Contact - Axicia</title>
+    <link rel="stylesheet" href="css/reserve.css" />
+    <title>Reserveren - Axicia</title>
   </head>
 
   <body>
@@ -70,10 +70,10 @@
           </ul>
           <ul class="nav__desktop-right">
             <li>
-              <a href="reserve.html" class="nav__item">Reserveren</a>
+              <a href="#hero" class="nav__item">Reserveren</a>
             </li>
             <li>
-              <a href="#hero" class="nav__item">Contact</a>
+              <a href="./contact.html" class="nav__item">Contact</a>
             </li>
           </ul>
         </nav>
@@ -97,10 +97,10 @@
                 <a href="pricing.html" class="nav__item">Tarieven</a>
               </li>
               <li>
-                <a href="reserve.html" class="nav__item">Reserveren</a>
+                <a href="#hero" class="nav__item">Reserveren</a>
               </li>
               <li>
-                <a href="#hero" class="nav__item">Contact</a>
+                <a href="./contact.html" class="nav__item">Contact</a>
               </li>
             </ul>
           </nav>
@@ -108,55 +108,55 @@
       </div>
       <section class="hero container" id="hero">
         <div class="hero__content">
-          <h1>Contact</h1>
+          <h1>Reserveren</h1>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="contact">
-        <div class="card__wrapper">
-          <div class="card contact-card">
-            <h3 class="contact-card__title">Contact Formulier</h3>
-            <form action="pricing.html" method="post" class="form">
-              <div class="form__container">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Naam"
-                  class="card__item"
-                  aria-label="Vul hier uw naam in."
-                  required
-                />
+      <section class="reserve">
+        <h4>Reserveer telefonisch gemakkelijk en snel een afspraak.</h4>
+        <div class="reserve__information">
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="information__box information__box-address">
+                <div class="information__box-text">
+                  <div class="information__box-title">
+                    <p>OPENINGSTIJDEN</p>
+                  </div>
+                  <div class="information__box-subtitle">
+                    <div class="information__box-days">
+                      <p>
+                        Zo/Ma:<br />
+                        Wo/Vr:<br />
+                        Di/Do:<br />
+                        Za:<br />
+                      </p>
+                    </div>
+                    <div class="information__box-times">
+                      <p>
+                        Gesloten<br />
+                        09:30 tot 18:00 <br />
+                        10:00 tot 20:00<br />
+                        09:00 tot 17:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form__container">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mailadres"
-                  aria-label="Vul hier uw e-mailadres in."
-                  class="card__item"
-                  required
-                />
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="information__box information__box-phone">
+                <div class="information__box-text">
+                  <div class="information__box-title">
+                    <p>TELEFOONNUMMER</p>
+                  </div>
+                  <div class="information__box-subtitle">
+                    <p>06 23 45 67 89</p>
+                  </div>
+                </div>
               </div>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Zet hier jouw bericht"
-                aria-label="Vul hier uw bericht in."
-                class="card__item"
-                required
-                minlength="10"
-                maxlength="500"
-              ></textarea>
-              <input
-                type="submit"
-                value="Verstuur uw bericht"
-                class="form__button btn"
-              />
-            </form>
+            </div>
           </div>
         </div>
       </section>
